@@ -1004,3 +1004,527 @@
 [I 161126 09:01:42 connectionpool:213] Starting new HTTP connection (9): up.qiniu.com
 [D 161126 09:01:42 connectionpool:395] "POST / HTTP/1.1" 200 76
 [I 161126 09:01:43 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 432.59ms
+[E 161128 10:14:25 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '3d67bb57-db65-5f6c-60c6-2e34b2ddc1f3'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:14:25 web:1946] 500 GET /api/house/area (192.168.13.49) 48.84ms
+[E 161128 10:15:26 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '5941dc76-9b65-a079-a382-276e466b581d'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:15:26 web:1946] 500 GET /api/house/area (192.168.13.49) 4.44ms
+[E 161128 10:15:28 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '30b9a93a-d124-7c65-a5dc-c618b80dbd3c'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:15:28 web:1946] 500 GET /api/house/area (192.168.13.49) 2.32ms
+[E 161128 10:15:59 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'd1788232-cccb-427f-a636-2dcb5714d0d9'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:15:59 web:1946] 500 GET /api/house/area (192.168.13.49) 8.71ms
+[I 161128 10:17:13 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[I 161128 10:17:15 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[I 161128 10:17:16 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[E 161128 10:17:27 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '19e1b379-9de4-5871-5b0a-aea5a46855a8'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:17:27 web:1946] 500 GET /api/house/area (192.168.13.49) 7.60ms
+[I 161128 10:18:12 web:1946] 304 GET / (127.0.0.1) 363.24ms
+[I 161128 10:18:12 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 19.60ms
+[I 161128 10:18:13 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 51.13ms
+[I 161128 10:18:13 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 11.59ms
+[I 161128 10:18:13 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 13.00ms
+[I 161128 10:18:13 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 11.47ms
+[I 161128 10:18:13 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 16.59ms
+[I 161128 10:18:13 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 28.34ms
+[I 161128 10:18:13 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 35.39ms
+[I 161128 10:18:13 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 11.03ms
+[I 161128 10:18:13 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 48.01ms
+[I 161128 10:18:13 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 84.27ms
+[I 161128 10:18:13 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 13.53ms
+[I 161128 10:18:13 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 18.31ms
+[I 161128 10:18:13 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 39.56ms
+[I 161128 10:18:13 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 20.67ms
+[I 161128 10:18:13 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 7.44ms
+[I 161128 10:18:13 web:1946] 304 GET /static/js/template.js (127.0.0.1) 130.52ms
+[I 161128 10:18:13 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 14.34ms
+[I 161128 10:18:14 web:1946] 200 GET /api/check_login (127.0.0.1) 3.40ms
+[W 161128 10:18:25 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 587.14ms
+[I 161128 10:18:25 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 44.88ms
+[I 161128 10:18:29 web:1946] 200 GET /login.html (127.0.0.1) 39.17ms
+[I 161128 10:18:29 web:1946] 200 GET /static/css/ihome/login.css (127.0.0.1) 22.43ms
+[I 161128 10:18:29 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 66.71ms
+[I 161128 10:18:56 web:1946] 304 GET /register.html (127.0.0.1) 28.50ms
+[I 161128 10:18:56 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 12.68ms
+[I 161128 10:18:56 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 24.82ms
+[I 161128 10:18:57 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=41f86b71-1641-4e47-8c2f-302582d52419 (127.0.0.1) 411.39ms
+[I 161128 10:19:15 web:1946] 200 POST /api/smscode (127.0.0.1) 2017.59ms
+[I 161128 10:19:15 web:1946] 200 GET /api/imagecode?pcodeid=41f86b71-1641-4e47-8c2f-302582d52419&codeid=d4565da5-4bb8-4d8e-a09b-1b8ff76be897 (127.0.0.1) 31.03ms
+[I 161128 10:19:19 web:1946] 200 POST /api/smscode (127.0.0.1) 2.68ms
+[I 161128 10:19:19 web:1946] 200 GET /api/imagecode?pcodeid=d4565da5-4bb8-4d8e-a09b-1b8ff76be897&codeid=390b378e-1366-41a3-93fc-280c42f57340 (127.0.0.1) 16.31ms
+[I 161128 10:19:25 web:1946] 200 GET /api/imagecode?pcodeid=390b378e-1366-41a3-93fc-280c42f57340&codeid=273c568d-1460-4a2c-9575-d741dddca593 (127.0.0.1) 28.42ms
+[I 161128 10:19:27 web:1946] 200 GET /api/imagecode?pcodeid=273c568d-1460-4a2c-9575-d741dddca593&codeid=5ccb31d1-a7dc-4df0-b8aa-c83c43b90d43 (127.0.0.1) 15.67ms
+[I 161128 10:19:29 web:1946] 200 GET /api/imagecode?pcodeid=5ccb31d1-a7dc-4df0-b8aa-c83c43b90d43&codeid=68e819a1-4d2e-456c-8da5-13c777e301f5 (127.0.0.1) 18.09ms
+[I 161128 10:19:37 web:1946] 200 POST /api/smscode (127.0.0.1) 2.52ms
+[I 161128 10:19:37 web:1946] 200 GET /api/imagecode?pcodeid=68e819a1-4d2e-456c-8da5-13c777e301f5&codeid=fbc4fc29-3b7d-494d-a139-48fb2067e337 (127.0.0.1) 22.10ms
+[I 161128 10:20:10 web:1946] 200 POST /api/login (127.0.0.1) 3.65ms
+[I 161128 10:20:23 web:1946] 200 POST /api/login (127.0.0.1) 2.76ms
+[I 161128 10:20:34 web:1946] 200 POST /api/login (127.0.0.1) 2.41ms
+[I 161128 10:20:39 web:1946] 200 POST /api/login (127.0.0.1) 2.75ms
+[I 161128 10:20:48 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=f8511829-0406-4a05-89dd-c9f308fec203 (127.0.0.1) 28.83ms
+[I 161128 10:23:47 web:1946] 304 GET /api/check_login (127.0.0.1) 15.07ms
+[I 161128 10:24:28 web:1946] 200 POST /api/login (127.0.0.1) 38.83ms
+[I 161128 10:24:39 web:1946] 200 POST /api/login (127.0.0.1) 4.13ms
+[I 161128 10:24:46 web:1946] 200 POST /api/login (127.0.0.1) 2.50ms
+[I 161128 10:24:52 web:1946] 200 POST /api/login (127.0.0.1) 1.66ms
+[I 161128 10:24:57 web:1946] 200 POST /api/login (127.0.0.1) 2.66ms
+[E 161128 10:26:05 web:1524] Uncaught exception GET /api/smscode (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/smscode', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '0441c5d8-6d67-7009-0460-ef1570d42c53'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:26:05 web:1946] 500 GET /api/smscode (192.168.13.49) 4.68ms
+[I 161128 10:26:09 web:1946] 200 POST /api/smscode (192.168.13.49) 3.14ms
+[I 161128 10:26:22 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=f7252deb-6eda-4dd3-a746-250f8c9b78c0 (127.0.0.1) 29.84ms
+[I 161128 10:26:25 web:1946] 200 GET /api/imagecode?pcodeid=f7252deb-6eda-4dd3-a746-250f8c9b78c0&codeid=3960d639-6b99-4ed8-abae-6c3365892ca3 (127.0.0.1) 13.65ms
+[I 161128 10:27:35 web:1946] 200 POST /api/smscode (192.168.13.49) 3.29ms
+[W 161128 10:35:34 web:1946] 405 POST /api/house/area (192.168.13.49) 1.50ms
+[E 161128 10:35:39 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'd32b8c2e-b2ad-bf0e-70f4-26a1f6b081df'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:35:39 web:1946] 500 GET /api/house/area (192.168.13.49) 5.00ms
+[E 161128 10:35:46 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '5a8b4b55-3785-876d-c4a8-8f3e99fe1cbc'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:35:46 web:1946] 500 GET /api/house/area (192.168.13.49) 3.03ms
+[E 161128 10:35:47 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '21b134a4-5328-03c7-bd82-fdb57b483bd1'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:35:47 web:1946] 500 GET /api/house/area (192.168.13.49) 2.41ms
+[E 161128 10:36:36 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'dcc17fb4-4822-be0e-a5aa-7861999d80a4'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:36:36 web:1946] 500 GET /api/house/area (192.168.13.49) 147.30ms
+[E 161128 10:36:55 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '1e3b8a7d-883e-e6b2-6177-f75a9dfb2eb1'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:36:55 web:1946] 500 GET /api/house/area (192.168.13.49) 3.82ms
+[E 161128 10:38:42 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '58aeb2dc-b426-c1f5-65ab-7ad42f2e6fb8'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:38:42 web:1946] 500 GET /api/house/area (192.168.13.49) 14.18ms
+[E 161128 10:38:45 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'c9d1e5f2-25a7-416f-be09-3d6c8f33d23d'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 10:38:45 web:1946] 500 GET /api/house/area (192.168.13.49) 6.06ms
+[I 161128 10:53:21 web:1946] 200 GET /api/imagecode?pcodeid=3960d639-6b99-4ed8-abae-6c3365892ca3&codeid=fa0e9e41-c695-46a1-85f8-d543209abbf1 (127.0.0.1) 187.10ms
+[I 161128 10:53:30 web:1946] 200 POST /api/smscode (127.0.0.1) 2.25ms
+[I 161128 10:53:30 web:1946] 200 GET /api/imagecode?pcodeid=fa0e9e41-c695-46a1-85f8-d543209abbf1&codeid=d8b29866-5c43-4093-8585-c758607fcece (127.0.0.1) 15.27ms
+[W 161128 10:53:53 web:1946] 404 GET /amin (127.0.0.1) 34.82ms
+[W 161128 10:54:01 web:1946] 404 GET /register.html/admin (127.0.0.1) 2.94ms
+[I 161128 10:54:09 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=cb353ef4-faa5-4499-aa27-5b08717a02d1 (127.0.0.1) 44.90ms
+[I 161128 10:54:45 web:1946] 200 POST /api/login (127.0.0.1) 7.89ms
+[I 161128 10:55:46 web:1946] 200 POST /api/login (127.0.0.1) 2.37ms
+[I 161128 19:20:41 web:1946] 200 POST /api/login (127.0.0.1) 243.54ms
+[I 161128 19:21:14 web:1946] 304 GET /login.html (127.0.0.1) 652.60ms
+[I 161128 19:21:14 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 28.44ms
+[I 161128 19:21:14 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 12.16ms
+[I 161128 19:21:14 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 13.54ms
+[I 161128 19:21:14 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 4.20ms
+[I 161128 19:21:14 web:1946] 304 GET /static/css/ihome/login.css (127.0.0.1) 7.25ms
+[I 161128 19:21:14 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 11.81ms
+[I 161128 19:21:14 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 20.55ms
+[I 161128 19:21:14 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 15.88ms
+[I 161128 19:21:15 web:1946] 304 GET /static/js/ihome/login.js (127.0.0.1) 14.20ms
+[I 161128 19:21:28 web:1946] 200 POST /api/login (127.0.0.1) 6.86ms
+[I 161128 19:21:51 web:1946] 200 POST /api/login (127.0.0.1) 2.27ms
+[I 161128 19:24:03 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 18.49ms
+[I 161128 19:24:03 web:1946] 304 GET /api/check_login (127.0.0.1) 2.30ms
+[W 161128 19:24:12 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 8.55ms
+[I 161128 19:24:29 web:1946] 200 POST /api/login (127.0.0.1) 3.29ms
+[I 161128 19:25:52 web:1946] 200 POST /api/login (127.0.0.1) 7.73ms
+[I 161128 19:29:36 autoreload:204] /home/python/codes/Tornado_Project/handlers/Passport.py modified; restarting server
+[I 161128 19:29:37 autoreload:204] /home/python/codes/Tornado_Project/handlers/Passport.py modified; restarting server
+[I 161128 19:29:38 autoreload:204] /home/python/codes/Tornado_Project/handlers/Passport.py modified; restarting server
+[I 161128 19:30:03 web:1946] 200 POST /api/login (127.0.0.1) 5.70ms
+[I 161128 19:30:04 web:1946] 200 POST /api/login (127.0.0.1) 2.38ms
+[I 161128 19:30:06 web:1946] 200 POST /api/login (127.0.0.1) 2.15ms
+[I 161128 19:30:07 web:1946] 200 POST /api/login (127.0.0.1) 4.10ms
+[I 161128 19:30:45 web:1946] 200 POST /api/login (127.0.0.1) 3.45ms
+[I 161128 19:30:54 web:1946] 200 POST /api/login (127.0.0.1) 2.65ms
+[I 161128 19:34:58 web:1946] 200 POST /api/login (127.0.0.1) 5.15ms
+[I 161128 19:34:59 web:1946] 200 GET /api/check_login (127.0.0.1) 2.23ms
+[W 161128 19:35:00 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.52ms
+[E 161128 19:35:42 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '4295977f-0063-5336-e8eb-ae308cc2450f'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 19:35:42 web:1946] 500 GET /api/house/area (192.168.13.49) 3.84ms
+[I 161128 19:36:47 autoreload:204] /home/python/codes/Tornado_Project/config.py modified; restarting server
+[I 161128 19:36:49 autoreload:204] /home/python/codes/Tornado_Project/config.py modified; restarting server
+[E 161128 19:59:59 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '644aa30b-8a38-8ac7-1b61-1d63efd990bc'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 19:59:59 web:1946] 500 GET /api/house/area (192.168.13.49) 102.25ms
+[E 161128 20:00:01 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'cf505e02-fd0f-d313-cc03-b41fff3536b9'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:00:01 web:1946] 500 GET /api/house/area (192.168.13.49) 10.52ms
+[E 161128 20:00:02 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '6ee0e992-233d-b381-efaf-8a16f5fe04d8'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:00:02 web:1946] 500 GET /api/house/area (192.168.13.49) 3.42ms
+[E 161128 20:00:03 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '6798a50e-3b36-b3e0-2759-e73a61cf7d3d'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:00:03 web:1946] 500 GET /api/house/area (192.168.13.49) 5.57ms
+[E 161128 20:00:09 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '37e9c344-ea7c-c612-af9d-7338653499d7'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:00:09 web:1946] 500 GET /api/house/area (192.168.13.49) 5.61ms
+[E 161128 20:20:52 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'bee49166-bb21-ae19-ba67-136ced629342'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:20:52 web:1946] 500 GET /api/house/area (192.168.13.49) 6.83ms
+[E 161128 20:22:28 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '52b2e603-1e2a-6c7d-0d6b-cfcdeb8a34f5'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:22:28 web:1946] 500 GET /api/house/area (192.168.13.49) 4.43ms
+[I 161128 20:26:23 autoreload:204] /home/python/codes/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[E 161128 20:26:27 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '58f4633b-b09d-334a-33e7-ce11bfff352c'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:26:27 web:1946] 500 GET /api/house/area (192.168.13.49) 16.25ms
+[E 161128 20:26:28 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'b82e6c9f-f013-e2f2-8ecc-fc08c33bcc4c'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:26:28 web:1946] 500 GET /api/house/area (192.168.13.49) 3.94ms
+[I 161128 20:26:36 autoreload:204] /home/python/codes/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[E 161128 20:26:53 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'a071573a-a68f-3ef8-3258-b6e3a22a59c3'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:26:53 web:1946] 500 GET /api/house/area (192.168.13.49) 14.26ms
+[E 161128 20:26:58 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '099520ea-a9d5-a33b-94c9-27e341f4377b'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:26:58 web:1946] 500 GET /api/house/area (192.168.13.49) 5.37ms
+[E 161128 20:26:59 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'f36af1c9-2588-0f1b-0860-2faf51a52209'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/codes/Tornado_Project/handlers/BaseHandler.py", line 23, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+[E 161128 20:26:59 web:1946] 500 GET /api/house/area (192.168.13.49) 2.75ms
+[I 161128 20:28:44 web:1946] 200 GET /api/house/area (192.168.13.49) 112.42ms
+[I 161128 20:29:16 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[I 161128 20:29:28 House:16] hit redis cache
+[E 161128 20:29:28 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Postman-Token': '17f7610e-e65d-4a61-83b1-639d9fb18ec0'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/codes/Tornado_Project/handlers/House.py", line 17, in get
+        return self.write(dict('{"errno":%s, "errmsg":"OK", "data":%s}' % (RET.OK, ret)))
+    ValueError: dictionary update sequence element #0 has length 1; 2 is required
+[E 161128 20:29:28 web:1946] 500 GET /api/house/area (192.168.13.49) 17.09ms
+[I 161128 20:31:08 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[I 161128 20:31:09 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[D 161128 20:31:16 House:16] [{"area_id": 1, "name": "\u4e1c\u57ce\u533a"}, {"area_id": 2, "name": "\u897f\u57ce\u533a"}, {"area_id": 3, "name": "\u671d\u9633\u533a"}, {"area_id": 4, "name": "\u6d77\u6dc0\u533a"}, {"area_id": 5, "name": "\u660c\u5e73\u533a"}, {"area_id": 6, "name": "\u4e30\u53f0\u533a"}, {"area_id": 7, "name": "\u623f\u5c71\u533a"}, {"area_id": 8, "name": "\u901a\u5dde\u533a"}, {"area_id": 9, "name": "\u987a\u4e49\u533a"}, {"area_id": 10, "name": "\u5927\u5174\u533a"}, {"area_id": 11, "name": "\u6000\u67d4\u533a"}, {"area_id": 12, "name": "\u5e73\u8c37\u533a"}, {"area_id": 13, "name": "\u5bc6\u4e91\u533a"}, {"area_id": 14, "name": "\u5ef6\u5e86\u533a"}, {"area_id": 15, "name": "\u77f3\u666f\u5c71\u533a"}, {"area_id": 16, "name": "\u95e8\u5934\u6c9f\u533a"}]
+[I 161128 20:31:16 House:17] hit redis cache
+[E 161128 20:31:16 web:1524] Uncaught exception GET /api/house/area (192.168.13.49)
+    HTTPServerRequest(protocol='http', host='192.168.13.73:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='192.168.13.49', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '192.168.13.73:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|1ac862fd|4cc2a3623e4031c968c5194f19c1726b|1480299265', 'Cache-Control': 'no-cache', 'Postman-Token': '8b942b4d-d8d3-8917-2a8f-c7d804ed5086'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/codes/Tornado_Project/handlers/House.py", line 18, in get
+        return self.write(dict('{"errno":%s, "errmsg":"OK", "data":%s}' % (RET.OK, ret)))
+    ValueError: dictionary update sequence element #0 has length 1; 2 is required
+[E 161128 20:31:16 web:1946] 500 GET /api/house/area (192.168.13.49) 9.19ms
+[I 161128 20:32:08 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[I 161128 20:32:10 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[I 161128 20:33:12 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[I 161128 20:33:13 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[I 161128 20:33:14 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[D 161128 20:33:23 House:16] [{"area_id": 1, "name": "\u4e1c\u57ce\u533a"}, {"area_id": 2, "name": "\u897f\u57ce\u533a"}, {"area_id": 3, "name": "\u671d\u9633\u533a"}, {"area_id": 4, "name": "\u6d77\u6dc0\u533a"}, {"area_id": 5, "name": "\u660c\u5e73\u533a"}, {"area_id": 6, "name": "\u4e30\u53f0\u533a"}, {"area_id": 7, "name": "\u623f\u5c71\u533a"}, {"area_id": 8, "name": "\u901a\u5dde\u533a"}, {"area_id": 9, "name": "\u987a\u4e49\u533a"}, {"area_id": 10, "name": "\u5927\u5174\u533a"}, {"area_id": 11, "name": "\u6000\u67d4\u533a"}, {"area_id": 12, "name": "\u5e73\u8c37\u533a"}, {"area_id": 13, "name": "\u5bc6\u4e91\u533a"}, {"area_id": 14, "name": "\u5ef6\u5e86\u533a"}, {"area_id": 15, "name": "\u77f3\u666f\u5c71\u533a"}, {"area_id": 16, "name": "\u95e8\u5934\u6c9f\u533a"}]
+[I 161128 20:33:23 House:17] hit redis cache
+[I 161128 20:33:23 web:1946] 200 GET /api/house/area (192.168.13.49) 6.86ms
+[I 161128 20:35:18 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[I 161128 20:35:19 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
