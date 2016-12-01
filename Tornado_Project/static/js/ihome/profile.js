@@ -31,4 +31,28 @@ $(document).ready(function(){
         };
         $(this).ajaxSubmit(options);
     });
+    $("#form-name").submit(function(e){
+        e.preventDefault();
+        var data = {};
+        $(this).serializeArray().map(function(x){data[x.name] = x.value;}); 
+        var jsonData = JSON.stringify(data);
+        $.ajax({
+            url:"/api/profile/name",
+            type:"POST",
+            data: jsonData, 
+            contentType: "application/json",
+            dataType: "json",
+            headers:{
+                "X-XSRFTOKEN":getCookie("_xsrf"),
+            },
+            success: function (data) {
+                if ("0" == data.errno) {
+                    $(".error-msg").hide();
+                    showSuccessMsg();
+                } else if ("4001" == data.errno) {
+                    $(".error-msg").show();
+                }
+            }
+        });
+    })
 })

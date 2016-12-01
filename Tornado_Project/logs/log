@@ -1528,3 +1528,344 @@
 [I 161128 20:33:23 web:1946] 200 GET /api/house/area (192.168.13.49) 6.86ms
 [I 161128 20:35:18 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
 [I 161128 20:35:19 autoreload:204] /home/python/codes/Tornado_Project/handlers/House.py modified; restarting server
+[I 161201 13:09:33 web:1946] 304 GET / (127.0.0.1) 87.49ms
+[I 161201 13:09:33 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 7.34ms
+[I 161201 13:09:33 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 10.35ms
+[I 161201 13:09:33 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 130.78ms
+[I 161201 13:09:33 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 147.21ms
+[I 161201 13:09:33 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 44.05ms
+[I 161201 13:09:33 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 14.70ms
+[I 161201 13:09:33 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 7.38ms
+[I 161201 13:09:33 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 6.33ms
+[I 161201 13:09:33 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 9.85ms
+[I 161201 13:09:33 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 28.86ms
+[I 161201 13:09:33 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 5.76ms
+[I 161201 13:09:33 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 12.39ms
+[I 161201 13:09:33 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.74ms
+[I 161201 13:09:33 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 3.32ms
+[I 161201 13:09:33 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 13.07ms
+[I 161201 13:09:34 web:1946] 200 GET /api/check_login (127.0.0.1) 77.63ms
+[E 161201 13:09:34 House:188] 'module' object has no attribute 'HOME_PAGE_MAX_HOUSES'
+[I 161201 13:09:34 web:1946] 200 GET /api/house/index (127.0.0.1) 11.69ms
+[W 161201 13:09:41 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 27.93ms
+[I 161201 13:09:41 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 35.88ms
+[I 161201 13:09:44 web:1946] 304 GET /login.html (127.0.0.1) 20.02ms
+[I 161201 13:09:45 web:1946] 304 GET /static/css/ihome/login.css (127.0.0.1) 17.27ms
+[I 161201 13:09:45 web:1946] 304 GET /static/js/ihome/login.js (127.0.0.1) 9.12ms
+[I 161201 13:10:04 web:1946] 200 POST /api/login (127.0.0.1) 2188.15ms
+[I 161201 13:10:05 web:1946] 200 GET /api/check_login (127.0.0.1) 1.83ms
+[E 161201 13:10:05 House:188] 'module' object has no attribute 'HOME_PAGE_MAX_HOUSES'
+[I 161201 13:10:05 web:1946] 304 GET /api/house/index (127.0.0.1) 2.77ms
+[W 161201 13:10:05 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.11ms
+[I 161201 13:10:38 web:1946] 200 GET /search.html?aid=&aname=&sd=2016-12-23&ed=2016-12-31 (127.0.0.1) 244.75ms
+[I 161201 13:10:38 web:1946] 304 GET /static/css/ihome/search.css (127.0.0.1) 18.84ms
+[I 161201 13:10:38 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 49.78ms
+[W 161201 13:10:38 web:1946] 404 GET /static/images/landlord01.jgp (127.0.0.1) 6.02ms
+[I 161201 13:10:38 web:1946] 304 GET /static/js/ihome/search.js (127.0.0.1) 37.05ms
+[I 161201 13:10:39 web:1946] 200 GET /api/house/area (127.0.0.1) 120.26ms
+[D 161201 13:10:39 House:276] select count(distinct hi_house_id) counts from ih_house_info left join ih_order_info on hi_house_id=oi_house_id where ((oi_begin_date is null and oi_end_date is null) or not (oi_begin_date<=%(end_date)s and oi_end_date>=%(start_date)s))
+[E 161201 13:10:40 web:1524] Uncaught exception GET /api/house/list?aid=&sd=2016-12-23&ed=2016-12-31&sk=new&p=1 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/house/list?aid=&sd=2016-12-23&ed=2016-12-31&sk=new&p=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/search.html?aid=&aname=&sd=2016-12-23&ed=2016-12-31', 'Cookie': 'csrftoken=9XEgxFopeP9EJ8ox6EdU1sI2GAP3AnAV; _xsrf=2|f1d6eeb3|b8a1dd694384b51acce1ae77d25cdc4b|1479974143; session_id="2|1:0|10:1480569004|10:session_id|44:OWM5NDZmNDYyYjRhNDQ5Mzg2NzEyZDQ4YjVkMzhhNTk=|fe72b51893fc646331a21e4cb861d6d2c7cedc03e3fa2de9dab29e1417ee4bf6"'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/codes/lhome/Tornado_Project/handlers/House.py", line 283, in get
+        total_page = int(math.ceil(float(ret["counts"]) / constants.HOUSE_LIST_PAGE_CAPACITY))
+    AttributeError: 'module' object has no attribute 'HOUSE_LIST_PAGE_CAPACITY'
+[E 161201 13:10:40 web:1946] 500 GET /api/house/list?aid=&sd=2016-12-23&ed=2016-12-31&sk=new&p=1 (127.0.0.1) 679.47ms
+[D 161201 13:10:55 House:276] select count(distinct hi_house_id) counts from ih_house_info left join ih_order_info on hi_house_id=oi_house_id where hi_area_id=%(area_id)s and ((oi_begin_date is null and oi_end_date is null) or not (oi_begin_date<=%(end_date)s and oi_end_date>=%(start_date)s))
+[E 161201 13:10:55 web:1524] Uncaught exception GET /api/house/list?aid=4&sd=2016-12-23&ed=2016-12-31&sk=new&p=1 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/house/list?aid=4&sd=2016-12-23&ed=2016-12-31&sk=new&p=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/search.html?aid=&aname=&sd=2016-12-23&ed=2016-12-31', 'Cookie': 'csrftoken=9XEgxFopeP9EJ8ox6EdU1sI2GAP3AnAV; _xsrf=2|f1d6eeb3|b8a1dd694384b51acce1ae77d25cdc4b|1479974143; session_id="2|1:0|10:1480569004|10:session_id|44:OWM5NDZmNDYyYjRhNDQ5Mzg2NzEyZDQ4YjVkMzhhNTk=|fe72b51893fc646331a21e4cb861d6d2c7cedc03e3fa2de9dab29e1417ee4bf6"'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/codes/lhome/Tornado_Project/handlers/House.py", line 283, in get
+        total_page = int(math.ceil(float(ret["counts"]) / constants.HOUSE_LIST_PAGE_CAPACITY))
+    AttributeError: 'module' object has no attribute 'HOUSE_LIST_PAGE_CAPACITY'
+[E 161201 13:10:55 web:1946] 500 GET /api/house/list?aid=4&sd=2016-12-23&ed=2016-12-31&sk=new&p=1 (127.0.0.1) 51.25ms
+[D 161201 13:11:09 House:276] select count(distinct hi_house_id) counts from ih_house_info left join ih_order_info on hi_house_id=oi_house_id where hi_area_id=%(area_id)s and ((oi_begin_date is null and oi_end_date is null) or not (oi_begin_date<=%(end_date)s and oi_end_date>=%(start_date)s))
+[E 161201 13:11:09 web:1524] Uncaught exception GET /api/house/list?aid=4&sd=2016-12-23&ed=2016-12-31&sk=booking&p=1 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/house/list?aid=4&sd=2016-12-23&ed=2016-12-31&sk=booking&p=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/search.html?aid=&aname=&sd=2016-12-23&ed=2016-12-31', 'Cookie': 'csrftoken=9XEgxFopeP9EJ8ox6EdU1sI2GAP3AnAV; _xsrf=2|f1d6eeb3|b8a1dd694384b51acce1ae77d25cdc4b|1479974143; session_id="2|1:0|10:1480569004|10:session_id|44:OWM5NDZmNDYyYjRhNDQ5Mzg2NzEyZDQ4YjVkMzhhNTk=|fe72b51893fc646331a21e4cb861d6d2c7cedc03e3fa2de9dab29e1417ee4bf6"'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/codes/lhome/Tornado_Project/handlers/House.py", line 283, in get
+        total_page = int(math.ceil(float(ret["counts"]) / constants.HOUSE_LIST_PAGE_CAPACITY))
+    AttributeError: 'module' object has no attribute 'HOUSE_LIST_PAGE_CAPACITY'
+[E 161201 13:11:09 web:1946] 500 GET /api/house/list?aid=4&sd=2016-12-23&ed=2016-12-31&sk=booking&p=1 (127.0.0.1) 3.50ms
+[I 161201 13:11:18 web:1946] 304 GET /api/check_login (127.0.0.1) 2.27ms
+[E 161201 13:11:18 House:188] 'module' object has no attribute 'HOME_PAGE_MAX_HOUSES'
+[I 161201 13:11:18 web:1946] 304 GET /api/house/index (127.0.0.1) 5.70ms
+[W 161201 13:11:19 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.17ms
+[I 161201 13:11:20 web:1946] 304 GET /my.html (127.0.0.1) 13.46ms
+[I 161201 13:11:20 web:1946] 304 GET /static/css/ihome/my.css (127.0.0.1) 9.42ms
+[I 161201 13:11:20 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 23.99ms
+[W 161201 13:11:20 web:1946] 404 GET /api/profile (127.0.0.1) 1.39ms
+[I 161201 13:11:22 web:1946] 304 GET /profile.html (127.0.0.1) 15.28ms
+[I 161201 13:11:22 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 21.01ms
+[I 161201 13:11:22 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 8.75ms
+[I 161201 13:11:22 web:1946] 200 GET /static/js/ihome/profile.js (127.0.0.1) 1.75ms
+[I 161201 13:11:57 web:1946] 200 GET /profile.html?name=13503316871 (127.0.0.1) 2.24ms
+[I 161201 13:11:57 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 4.90ms
+[I 161201 13:12:12 web:1946] 200 GET /profile.html?avatar=landlord01.jpg (127.0.0.1) 1.81ms
+[I 161201 13:12:39 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 4.41ms
+[I 161201 13:13:58 web:1946] 200 GET /static/js/ihome/profile.js (127.0.0.1) 2.73ms
+[D 161201 13:14:39 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161201 13:14:39 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161201 13:15:09 retry:283] Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None)
+[W 161201 13:15:09 connectionpool:647] Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='up.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:15:09 connectionpool:213] Starting new HTTP connection (2): up.qiniu.com
+[D 161201 13:15:39 retry:283] Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None)
+[W 161201 13:15:39 connectionpool:647] Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='up.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:15:39 connectionpool:213] Starting new HTTP connection (3): up.qiniu.com
+[D 161201 13:16:09 retry:283] Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None)
+[W 161201 13:16:09 connectionpool:647] Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='up.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:16:09 connectionpool:213] Starting new HTTP connection (4): up.qiniu.com
+[I 161201 13:16:39 connectionpool:213] Starting new HTTP connection (1): upload.qiniu.com
+[D 161201 13:17:09 retry:283] Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None)
+[W 161201 13:17:09 connectionpool:647] Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='upload.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:17:09 connectionpool:213] Starting new HTTP connection (2): upload.qiniu.com
+[D 161201 13:17:39 retry:283] Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None)
+[W 161201 13:17:39 connectionpool:647] Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='upload.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:17:39 connectionpool:213] Starting new HTTP connection (3): upload.qiniu.com
+[D 161201 13:18:09 retry:283] Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None)
+[W 161201 13:18:09 connectionpool:647] Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='upload.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:18:09 connectionpool:213] Starting new HTTP connection (4): upload.qiniu.com
+[E 161201 13:18:39 Profile:24] 上传文件到七牛错误
+[I 161201 13:18:39 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 240843.40ms
+[I 161201 13:18:39 connectionpool:213] Starting new HTTP connection (5): up.qiniu.com
+[D 161201 13:19:10 retry:283] Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None)
+[W 161201 13:19:10 connectionpool:647] Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='up.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:19:10 connectionpool:213] Starting new HTTP connection (6): up.qiniu.com
+[D 161201 13:19:40 retry:283] Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None)
+[W 161201 13:19:40 connectionpool:647] Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='up.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:19:40 connectionpool:213] Starting new HTTP connection (7): up.qiniu.com
+[D 161201 13:20:10 retry:283] Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None)
+[W 161201 13:20:10 connectionpool:647] Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='up.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:20:10 connectionpool:213] Starting new HTTP connection (8): up.qiniu.com
+[I 161201 13:20:40 connectionpool:213] Starting new HTTP connection (5): upload.qiniu.com
+[D 161201 13:21:10 retry:283] Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None)
+[W 161201 13:21:10 connectionpool:647] Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='upload.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:21:10 connectionpool:213] Starting new HTTP connection (6): upload.qiniu.com
+[D 161201 13:21:40 retry:283] Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None)
+[W 161201 13:21:40 connectionpool:647] Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='upload.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:21:40 connectionpool:213] Starting new HTTP connection (7): upload.qiniu.com
+[D 161201 13:22:10 retry:283] Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None)
+[W 161201 13:22:10 connectionpool:647] Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='upload.qiniu.com', port=80): Read timed out. (read timeout=30)",)': /
+[I 161201 13:22:10 connectionpool:213] Starting new HTTP connection (8): upload.qiniu.com
+[E 161201 13:22:41 Profile:24] 上传文件到七牛错误
+[I 161201 13:22:41 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 241112.88ms
+[I 161201 16:02:19 web:1946] 304 GET /profile.html?name=13503316871 (127.0.0.1) 11.23ms
+[I 161201 16:02:19 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.47ms
+[I 161201 16:02:19 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.79ms
+[I 161201 16:02:19 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.37ms
+[I 161201 16:02:19 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.49ms
+[I 161201 16:02:19 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 6.47ms
+[I 161201 16:02:19 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.06ms
+[I 161201 16:02:19 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.27ms
+[I 161201 16:02:19 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.77ms
+[I 161201 16:02:19 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.57ms
+[I 161201 16:02:19 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.17ms
+[I 161201 16:02:19 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.83ms
+[I 161201 16:02:19 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.62ms
+[I 161201 16:19:52 autoreload:204] /home/python/codes/lhome/Tornado_Project/utils/image_storage.py modified; restarting server
+[I 161201 16:19:54 autoreload:204] /home/python/codes/lhome/Tornado_Project/utils/image_storage.py modified; restarting server
+[I 161201 16:19:56 autoreload:204] /home/python/codes/lhome/Tornado_Project/utils/image_storage.py modified; restarting server
+[I 161201 16:21:05 autoreload:204] /home/python/codes/lhome/Tornado_Project/handlers/Profile.py modified; restarting server
+[I 161201 16:21:06 autoreload:204] /home/python/codes/lhome/Tornado_Project/handlers/Profile.py modified; restarting server
+[I 161201 16:21:07 autoreload:204] /home/python/codes/lhome/Tornado_Project/handlers/Profile.py modified; restarting server
+[I 161201 16:21:08 autoreload:204] /home/python/codes/lhome/Tornado_Project/handlers/Profile.py modified; restarting server
+[I 161201 16:21:10 autoreload:204] /home/python/codes/lhome/Tornado_Project/handlers/Profile.py modified; restarting server
+[I 161201 16:21:12 autoreload:204] /home/python/codes/lhome/Tornado_Project/handlers/Profile.py modified; restarting server
+[D 161201 16:21:41 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161201 16:21:41 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161201 16:21:56 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161201 16:21:57 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 16282.95ms
+[I 161201 16:21:57 web:1946] 304 GET /profile.html?name=13503316871 (127.0.0.1) 38.54ms
+[I 161201 16:21:57 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.62ms
+[I 161201 16:21:57 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.91ms
+[I 161201 16:21:57 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 7.15ms
+[I 161201 16:21:57 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.43ms
+[I 161201 16:21:57 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.00ms
+[I 161201 16:21:57 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.31ms
+[I 161201 16:21:57 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.61ms
+[I 161201 16:21:57 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.17ms
+[I 161201 16:21:57 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.79ms
+[I 161201 16:21:57 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.12ms
+[I 161201 16:21:57 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.05ms
+[I 161201 16:21:57 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 6.40ms
+[D 161201 16:22:13 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161201 16:22:13 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 67.91ms
+[W 161201 16:22:23 web:1946] 404 GET /api/profile (127.0.0.1) 47.76ms
+[D 161201 16:22:40 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161201 16:22:40 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 61.73ms
+[I 161201 16:22:47 web:1946] 200 POST /api/profile/name (127.0.0.1) 5.73ms
+[W 161201 16:22:51 web:1946] 404 GET /api/profile (127.0.0.1) 1.33ms
+[I 161201 16:22:54 web:1946] 304 GET /orders.html (127.0.0.1) 16.12ms
+[I 161201 16:22:54 web:1946] 304 GET /static/css/ihome/orders.css (127.0.0.1) 18.88ms
+[I 161201 16:22:54 web:1946] 304 GET /static/js/ihome/orders.js (127.0.0.1) 11.23ms
+[W 161201 16:22:57 web:1946] 404 GET /api/profile (127.0.0.1) 1.74ms
+[I 161201 16:22:57 web:1946] 304 GET /auth.html (127.0.0.1) 14.16ms
+[I 161201 16:22:57 web:1946] 304 GET /static/js/ihome/auth.js (127.0.0.1) 11.30ms
+[D 161201 16:22:58 Profile:84] {'up_id_card': u'123456789', 'up_real_name': u'wzj'}
+[I 161201 16:22:58 web:1946] 304 GET /api/profile/auth (127.0.0.1) 12.59ms
+[W 161201 16:23:06 web:1946] 404 GET /api/profile (127.0.0.1) 3.60ms
+[I 161201 16:23:09 web:1946] 200 GET /myhouse.html (127.0.0.1) 10.42ms
+[I 161201 16:23:09 web:1946] 304 GET /static/css/ihome/myhouse.css (127.0.0.1) 10.11ms
+[I 161201 16:23:09 web:1946] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 3.16ms
+[D 161201 16:23:09 Profile:84] {'up_id_card': u'123456789', 'up_real_name': u'wzj'}
+[I 161201 16:23:09 web:1946] 304 GET /api/profile/auth (127.0.0.1) 3.55ms
+[I 161201 16:23:09 web:1946] 200 GET /api/house/my (127.0.0.1) 47.32ms
+[I 161201 16:23:13 web:1946] 200 GET /detail.html?id=1&f=my (127.0.0.1) 22.94ms
+[I 161201 16:23:13 web:1946] 200 GET /static/css/ihome/detail.css (127.0.0.1) 211.31ms
+[I 161201 16:23:13 web:1946] 200 GET /static/images/landlord01.jpg (127.0.0.1) 16.11ms
+[I 161201 16:23:13 web:1946] 200 GET /static/js/ihome/detail.js (127.0.0.1) 7.34ms
+[I 161201 16:23:13 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 30.45ms
+[I 161201 16:23:13 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 18.86ms
+[I 161201 16:23:14 web:1946] 200 GET /static/images/houseicon_sprite.png (127.0.0.1) 17.29ms
+[W 161201 16:23:14 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.74ms
+[W 161201 16:23:47 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.47ms
+[W 161201 16:23:53 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.13ms
+[I 161201 16:23:55 web:1946] 304 GET /api/house/my (127.0.0.1) 2.14ms
+[I 161201 16:23:58 web:1946] 304 GET /newhouse.html (127.0.0.1) 9.85ms
+[I 161201 16:23:58 web:1946] 304 GET /static/css/ihome/newhouse.css (127.0.0.1) 11.92ms
+[D 161201 16:23:58 House:24] [{"area_id": 1, "name": "\u4e1c\u57ce\u533a"}, {"area_id": 2, "name": "\u897f\u57ce\u533a"}, {"area_id": 3, "name": "\u671d\u9633\u533a"}, {"area_id": 4, "name": "\u6d77\u6dc0\u533a"}, {"area_id": 5, "name": "\u660c\u5e73\u533a"}, {"area_id": 6, "name": "\u4e30\u53f0\u533a"}, {"area_id": 7, "name": "\u623f\u5c71\u533a"}, {"area_id": 8, "name": "\u901a\u5dde\u533a"}, {"area_id": 9, "name": "\u987a\u4e49\u533a"}, {"area_id": 10, "name": "\u5927\u5174\u533a"}, {"area_id": 11, "name": "\u6000\u67d4\u533a"}, {"area_id": 12, "name": "\u5e73\u8c37\u533a"}, {"area_id": 13, "name": "\u5bc6\u4e91\u533a"}, {"area_id": 14, "name": "\u5ef6\u5e86\u533a"}, {"area_id": 15, "name": "\u77f3\u666f\u5c71\u533a"}, {"area_id": 16, "name": "\u95e8\u5934\u6c9f\u533a"}]
+[I 161201 16:23:58 House:25] hit redis cache
+[I 161201 16:23:58 web:1946] 200 GET /api/house/area (127.0.0.1) 1.86ms
+[D 161201 16:26:09 House:139] insert into ih_house_facility(hf_house_id,hf_facility_id) values(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s),(%s, %s)
+[D 161201 16:26:09 House:140] (2L, u'1', 2L, u'2', 2L, u'3', 2L, u'4', 2L, u'5', 2L, u'6', 2L, u'7', 2L, u'8', 2L, u'9', 2L, u'10', 2L, u'11', 2L, u'12', 2L, u'13', 2L, u'14', 2L, u'15', 2L, u'16', 2L, u'17', 2L, u'18', 2L, u'19', 2L, u'20', 2L, u'21', 2L, u'22', 2L, u'23')
+[I 161201 16:26:09 web:1946] 200 POST /api/house/info (127.0.0.1) 336.55ms
+[I 161201 16:26:30 connectionpool:248] Resetting dropped connection: up.qiniu.com
+[D 161201 16:26:35 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161201 16:26:35 web:1946] 200 POST /api/house/image (127.0.0.1) 4567.34ms
+[D 161201 16:26:44 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161201 16:26:45 web:1946] 200 POST /api/house/image (127.0.0.1) 4473.18ms
+[D 161201 16:26:56 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161201 16:26:56 web:1946] 200 POST /api/house/image (127.0.0.1) 4490.43ms
+[D 161201 16:27:01 Profile:84] {'up_id_card': u'123456789', 'up_real_name': u'wzj'}
+[I 161201 16:27:01 web:1946] 304 GET /api/profile/auth (127.0.0.1) 2.25ms
+[I 161201 16:27:01 web:1946] 200 GET /api/house/my (127.0.0.1) 3.15ms
+[W 161201 16:27:05 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.55ms
+[I 161201 16:27:08 web:1946] 304 GET /api/house/my (127.0.0.1) 2.54ms
+[W 161201 16:27:10 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 6.50ms
+[I 161201 16:27:25 web:1946] 304 GET /api/house/my (127.0.0.1) 7.04ms
+[I 161201 16:27:26 web:1946] 200 GET /detail.html?id=2&f=my (127.0.0.1) 1.59ms
+[W 161201 16:27:27 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.35ms
+[I 161201 16:26:21 web:1946] 304 GET /api/house/my (127.0.0.1) 2.34ms
+[W 161201 16:26:25 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.07ms
+[W 161201 16:26:45 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.38ms
+[I 161201 16:26:48 web:1946] 304 GET /api/house/my (127.0.0.1) 4.92ms
+[W 161201 16:26:49 web:1946] 404 GET /api/profile (127.0.0.1) 1.34ms
+[W 161201 16:26:51 web:1946] 404 GET /api/logout (127.0.0.1) 2.21ms
+[W 161201 16:26:54 web:1946] 404 GET /api/logout (127.0.0.1) 1.27ms
+[W 161201 16:26:56 web:1946] 404 GET /api/logout (127.0.0.1) 1.94ms
+[I 161201 16:27:14 connectionpool:248] Resetting dropped connection: up.qiniu.com
+[D 161201 16:27:15 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161201 16:27:15 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 141.95ms
+[I 161201 16:27:23 web:1946] 200 POST /api/profile/name (127.0.0.1) 2.84ms
+[I 161201 16:27:28 web:1946] 304 GET /profile.html (127.0.0.1) 1.83ms
+[I 161201 16:27:28 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.94ms
+[I 161201 16:27:28 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.79ms
+[I 161201 16:27:28 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.47ms
+[I 161201 16:27:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.17ms
+[I 161201 16:27:28 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.92ms
+[I 161201 16:27:28 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.80ms
+[I 161201 16:27:28 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.86ms
+[I 161201 16:27:28 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.53ms
+[I 161201 16:27:28 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.61ms
+[I 161201 16:27:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.86ms
+[I 161201 16:27:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.77ms
+[I 161201 16:27:28 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 2.84ms
+[W 161201 16:27:31 web:1946] 404 GET /api/profile (127.0.0.1) 2.57ms
+[W 161201 16:27:35 web:1946] 404 GET /api/logout (127.0.0.1) 1.21ms
+[I 161201 16:27:35 web:1946] 304 GET /lorders.html (127.0.0.1) 14.11ms
+[W 161201 16:27:35 web:1946] 404 GET /%7B%7Border.img_url%7D%7D (127.0.0.1) 1.45ms
+[I 161201 16:27:35 web:1946] 304 GET /static/js/ihome/lorders.js (127.0.0.1) 8.41ms
+[W 161201 16:28:21 web:1946] 404 GET /api/profile (127.0.0.1) 1.65ms
+[D 161201 16:28:24 Profile:84] {'up_id_card': u'123456789', 'up_real_name': u'wzj'}
+[I 161201 16:28:24 web:1946] 304 GET /api/profile/auth (127.0.0.1) 2.21ms
+[I 161201 16:28:24 web:1946] 304 GET /api/house/my (127.0.0.1) 5.59ms
+[W 161201 16:28:29 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.05ms
+[I 161201 16:28:38 web:1946] 304 GET /api/house/my (127.0.0.1) 5.18ms
+[W 161201 16:28:43 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.91ms
+[I 161201 16:28:54 web:1946] 304 GET /api/house/my (127.0.0.1) 5.41ms
+[W 161201 16:28:56 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.22ms
+[I 161201 16:29:06 web:1946] 304 GET /api/house/my (127.0.0.1) 6.84ms
+[W 161201 16:29:09 web:1946] 404 GET /api/profile (127.0.0.1) 2.30ms
+[W 161201 16:29:12 web:1946] 404 GET /api/logout (127.0.0.1) 1.23ms
+[I 161201 16:36:30 autoreload:204] /home/python/codes/lhome/Tornado_Project/handlers/House.py modified; restarting server
+[I 161201 16:36:32 autoreload:204] /home/python/codes/lhome/Tornado_Project/handlers/House.py modified; restarting server
+[I 161201 16:36:34 autoreload:204] /home/python/codes/lhome/Tornado_Project/handlers/House.py modified; restarting server
+[W 161201 16:36:55 web:1946] 404 GET /api/profile (127.0.0.1) 38.96ms
+[D 161201 16:36:57 Profile:84] {'up_id_card': u'123456789', 'up_real_name': u'wzj'}
+[I 161201 16:36:57 web:1946] 304 GET /api/profile/auth (127.0.0.1) 35.22ms
+[I 161201 16:36:58 web:1946] 304 GET /api/house/my (127.0.0.1) 25.89ms
+[D 161201 16:37:01 House:24] [{"area_id": 1, "name": "\u4e1c\u57ce\u533a"}, {"area_id": 2, "name": "\u897f\u57ce\u533a"}, {"area_id": 3, "name": "\u671d\u9633\u533a"}, {"area_id": 4, "name": "\u6d77\u6dc0\u533a"}, {"area_id": 5, "name": "\u660c\u5e73\u533a"}, {"area_id": 6, "name": "\u4e30\u53f0\u533a"}, {"area_id": 7, "name": "\u623f\u5c71\u533a"}, {"area_id": 8, "name": "\u901a\u5dde\u533a"}, {"area_id": 9, "name": "\u987a\u4e49\u533a"}, {"area_id": 10, "name": "\u5927\u5174\u533a"}, {"area_id": 11, "name": "\u6000\u67d4\u533a"}, {"area_id": 12, "name": "\u5e73\u8c37\u533a"}, {"area_id": 13, "name": "\u5bc6\u4e91\u533a"}, {"area_id": 14, "name": "\u5ef6\u5e86\u533a"}, {"area_id": 15, "name": "\u77f3\u666f\u5c71\u533a"}, {"area_id": 16, "name": "\u95e8\u5934\u6c9f\u533a"}]
+[I 161201 16:37:01 House:25] hit redis cache
+[I 161201 16:37:01 web:1946] 304 GET /api/house/area (127.0.0.1) 2.39ms
+[D 161201 16:40:54 House:139] insert into ih_house_facility(hf_house_id,hf_facility_id) values(%s, %s),(%s, %s),(%s, %s),(%s, %s)
+[D 161201 16:40:54 House:140] (3L, u'1', 3L, u'4', 3L, u'13', 3L, u'14')
+[I 161201 16:40:54 web:1946] 200 POST /api/house/info (127.0.0.1) 574.38ms
+[D 161201 16:41:29 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161201 16:41:29 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161201 16:41:34 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161201 16:41:35 web:1946] 200 POST /api/house/image (127.0.0.1) 6569.58ms
+[D 161201 16:41:47 Profile:84] {'up_id_card': u'123456789', 'up_real_name': u'wzj'}
+[I 161201 16:41:47 web:1946] 304 GET /api/profile/auth (127.0.0.1) 215.34ms
+[I 161201 16:41:47 web:1946] 200 GET /api/house/my (127.0.0.1) 147.67ms
+[I 161201 16:41:52 web:1946] 200 GET /detail.html?id=3&f=my (127.0.0.1) 103.37ms
+[W 161201 16:41:53 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 9.58ms
+[I 161201 16:42:23 web:1946] 304 GET /api/house/my (127.0.0.1) 74.82ms
+[W 161201 16:42:27 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.45ms
+[I 161201 16:42:29 web:1946] 304 GET /api/house/my (127.0.0.1) 18.52ms
+[W 161201 16:42:32 web:1946] 404 GET /api/profile (127.0.0.1) 2.49ms
+[W 161201 16:42:37 web:1946] 404 GET /%7B%7Border.img_url%7D%7D (127.0.0.1) 3.70ms
+[W 161201 16:42:46 web:1946] 404 GET /api/profile (127.0.0.1) 2.97ms
+[W 161201 16:42:52 web:1946] 404 GET /api/profile (127.0.0.1) 1.40ms
+[I 161201 16:43:12 connectionpool:248] Resetting dropped connection: up.qiniu.com
+[D 161201 16:43:12 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161201 16:43:12 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 584.83ms
+[I 161201 16:43:29 web:1946] 200 POST /api/profile/name (127.0.0.1) 298.21ms
+[W 161201 16:43:39 web:1946] 404 GET /api/profile (127.0.0.1) 3.48ms
+[I 161201 16:43:45 web:1946] 200 GET /api/check_login (127.0.0.1) 2.17ms
+[E 161201 16:43:45 House:188] 'module' object has no attribute 'HOME_PAGE_MAX_HOUSES'
+[I 161201 16:43:45 web:1946] 304 GET /api/house/index (127.0.0.1) 2.21ms
+[W 161201 16:43:45 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.21ms
+[I 161201 16:43:58 web:1946] 304 GET /search.html?aid=&aname=&sd=&ed= (127.0.0.1) 15.71ms
+[W 161201 16:43:58 web:1946] 404 GET /static/images/landlord01.jgp (127.0.0.1) 22.70ms
+[D 161201 16:43:59 House:24] [{"area_id": 1, "name": "\u4e1c\u57ce\u533a"}, {"area_id": 2, "name": "\u897f\u57ce\u533a"}, {"area_id": 3, "name": "\u671d\u9633\u533a"}, {"area_id": 4, "name": "\u6d77\u6dc0\u533a"}, {"area_id": 5, "name": "\u660c\u5e73\u533a"}, {"area_id": 6, "name": "\u4e30\u53f0\u533a"}, {"area_id": 7, "name": "\u623f\u5c71\u533a"}, {"area_id": 8, "name": "\u901a\u5dde\u533a"}, {"area_id": 9, "name": "\u987a\u4e49\u533a"}, {"area_id": 10, "name": "\u5927\u5174\u533a"}, {"area_id": 11, "name": "\u6000\u67d4\u533a"}, {"area_id": 12, "name": "\u5e73\u8c37\u533a"}, {"area_id": 13, "name": "\u5bc6\u4e91\u533a"}, {"area_id": 14, "name": "\u5ef6\u5e86\u533a"}, {"area_id": 15, "name": "\u77f3\u666f\u5c71\u533a"}, {"area_id": 16, "name": "\u95e8\u5934\u6c9f\u533a"}]
+[I 161201 16:43:59 House:25] hit redis cache
+[I 161201 16:43:59 web:1946] 304 GET /api/house/area (127.0.0.1) 2.96ms
+[D 161201 16:43:59 House:276] select count(distinct hi_house_id) counts from ih_house_info left join ih_order_info on hi_house_id=oi_house_id
+[E 161201 16:43:59 web:1524] Uncaught exception GET /api/house/list?aid=&sd=&ed=&sk=new&p=1 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/house/list?aid=&sd=&ed=&sk=new&p=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/search.html?aid=&aname=&sd=&ed=', 'Cookie': 'csrftoken=9XEgxFopeP9EJ8ox6EdU1sI2GAP3AnAV; _xsrf=2|f1d6eeb3|b8a1dd694384b51acce1ae77d25cdc4b|1479974143; session_id="2|1:0|10:1480581809|10:session_id|44:OWM5NDZmNDYyYjRhNDQ5Mzg2NzEyZDQ4YjVkMzhhNTk=|b44f585aa0205a016c90718e119426eb897a4636e7c692fcbbe8eb325fe08407"'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/codes/lhome/Tornado_Project/handlers/House.py", line 283, in get
+        total_page = int(math.ceil(float(ret["counts"]) / constants.HOUSE_LIST_PAGE_CAPACITY))
+    AttributeError: 'module' object has no attribute 'HOUSE_LIST_PAGE_CAPACITY'
+[E 161201 16:43:59 web:1946] 500 GET /api/house/list?aid=&sd=&ed=&sk=new&p=1 (127.0.0.1) 245.24ms
+[D 161201 16:44:31 House:276] select count(distinct hi_house_id) counts from ih_house_info left join ih_order_info on hi_house_id=oi_house_id where hi_area_id=%(area_id)s and ((oi_begin_date is null and oi_end_date is null) or not (oi_begin_date<=%(end_date)s and oi_end_date>=%(start_date)s))
+[E 161201 16:44:31 web:1524] Uncaught exception GET /api/house/list?aid=3&sd=2016-12-22&ed=2016-12-22&sk=new&p=1 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/house/list?aid=3&sd=2016-12-22&ed=2016-12-22&sk=new&p=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/search.html?aid=&aname=&sd=&ed=', 'Cookie': 'csrftoken=9XEgxFopeP9EJ8ox6EdU1sI2GAP3AnAV; _xsrf=2|f1d6eeb3|b8a1dd694384b51acce1ae77d25cdc4b|1479974143; session_id="2|1:0|10:1480581809|10:session_id|44:OWM5NDZmNDYyYjRhNDQ5Mzg2NzEyZDQ4YjVkMzhhNTk=|b44f585aa0205a016c90718e119426eb897a4636e7c692fcbbe8eb325fe08407"'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/codes/lhome/Tornado_Project/handlers/House.py", line 283, in get
+        total_page = int(math.ceil(float(ret["counts"]) / constants.HOUSE_LIST_PAGE_CAPACITY))
+    AttributeError: 'module' object has no attribute 'HOUSE_LIST_PAGE_CAPACITY'
+[E 161201 16:44:31 web:1946] 500 GET /api/house/list?aid=3&sd=2016-12-22&ed=2016-12-22&sk=new&p=1 (127.0.0.1) 72.93ms
+[I 161201 16:44:45 web:1946] 200 GET /detail.html?id=1 (127.0.0.1) 1.28ms
+[W 161201 16:44:47 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.33ms
+[D 161201 16:44:53 House:276] select count(distinct hi_house_id) counts from ih_house_info left join ih_order_info on hi_house_id=oi_house_id
+[E 161201 16:44:53 web:1524] Uncaught exception GET /api/house/list?aid=&sd=&ed=&sk=new&p=1 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/house/list?aid=&sd=&ed=&sk=new&p=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/search.html?aid=&aname=&sd=&ed=', 'Cookie': 'csrftoken=9XEgxFopeP9EJ8ox6EdU1sI2GAP3AnAV; _xsrf=2|f1d6eeb3|b8a1dd694384b51acce1ae77d25cdc4b|1479974143; session_id="2|1:0|10:1480581809|10:session_id|44:OWM5NDZmNDYyYjRhNDQ5Mzg2NzEyZDQ4YjVkMzhhNTk=|b44f585aa0205a016c90718e119426eb897a4636e7c692fcbbe8eb325fe08407"'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/codes/lhome/Tornado_Project/handlers/House.py", line 283, in get
+        total_page = int(math.ceil(float(ret["counts"]) / constants.HOUSE_LIST_PAGE_CAPACITY))
+    AttributeError: 'module' object has no attribute 'HOUSE_LIST_PAGE_CAPACITY'
+[E 161201 16:44:53 web:1946] 500 GET /api/house/list?aid=&sd=&ed=&sk=new&p=1 (127.0.0.1) 5.07ms
+[W 161201 16:44:58 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.31ms
